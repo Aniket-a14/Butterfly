@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(135deg, #05030A, #0A0610, #03070C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    background-color: transparent;
+    display: block;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.3)); /* Glow effect */
+}
