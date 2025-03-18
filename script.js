@@ -1,7 +1,11 @@
-let scaleFactor = 1.5;
+let scaleFactor = 1;
+let a = 5;
+let n = 4; 
+let useCos = true; 
 
 function polarEquation(theta, scale) {
-    return (Math.exp(Math.cos(theta)) - 2 * Math.cos(4 * theta) - Math.pow(Math.sin(theta / 12), 5)) * scale;
+    let r = useCos ? a * Math.cos(n * theta) : a * Math.sin(n * theta);
+    return r * scale;
 }
 
 const colorGradient = [
